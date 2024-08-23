@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Secreta</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+        <main>
+            <div class="container">
+                <header>
+                    <img src="./asset/logo.svg">
+                </header>
+
+                <div class="organizacao">
+                    <section class="container__informacoes">
+                        <label for="name" class="visually-hidden"></label>
+                        <textarea class="container__informacoes__textarea" id="name"
+                            placeholder="Digite seu texto."></textarea>
+                    </section>
+
+                    <section class="container__acoes">
+                        <div class="container__acoes__alerta">
+                            <img src="./asset/Group.png" alt="Alerta">
+                            <p class="container__acoes__texto">Apenas letras minúsculas e sem acento.</p>
+                        </div>
+                        <div class="container__button">
+                            <button onclick="criptografar()">Criptografar</button>
+                            <button onclick="descriptografar()">Descriptografar</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+            <div class="container__resultado" >
+                <div id="resultado">
+                <img src="./asset/Looking.png" class="img__investigacao" alt="Nenhuma mensagem encontrada">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p class="container__resultado__subtexto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+                <button onclick="copiar()" class="botao__copiar" id="copy" >Copiar</button>
+            </div>
+        </main>
+    <footer>Desenvolvido por Wesley Bezerra Santos</footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
